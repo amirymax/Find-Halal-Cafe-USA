@@ -1,0 +1,84 @@
+{
+    "AL": [],
+    "AK": [],
+    "AZ": [],
+    "AR": [],
+    "CA": [],
+    "CO": [],
+    "CT": [],
+    "DE": [],
+    "FL": [],
+    "GA": [],
+    "HI": [],
+    "ID": [],
+    "IL": [],
+    "IN": [],
+    "IA": [],
+    "KS": [],
+    "KY": [],
+    "LA": [],
+    "ME": [],
+    "MD": [],
+    "MA": [],
+    "MI": [],
+    "MN": [],
+    "MS": [],
+    "MO": [],
+    "MT": [],
+    "NE": [],
+    "NV": [],
+    "NH": [],
+    "NJ": [],
+    "NM": [],
+    "NY": [],
+    "NC": [],
+    "ND": [],
+    "OH": [],
+    "OK": [],
+    "OR": [
+        {
+            "name": "FOOD TRUCK NAVAT PDX",
+            "rating": "⭐️⭐️⭐️⭐️",
+            "address": "3625 NE Martin Luther King Jr Blvd, Portland, OR 97212",
+            "phone": ["4254282011", "7253774764"],
+            "delivery": "Yes, call for order"
+        }
+    ],
+    "PA": [
+        {
+            "name": "ASR FOOD MARKET",
+            "rating": "⭐️⭐️⭐️⭐️",
+            "address": "14101 Bustleton Ave, Philadelphia, PA 19116",
+            "phone": ["2678385999"],
+            "delivery": "Yes"
+        }
+    ],
+    "RI": [],
+    "SC": [],
+    "SD": [],
+    "TN": [
+        {
+            "name": "Uzbegim Halal Restaurant",
+            "rating": "⭐️⭐️⭐️⭐️",
+            "address": "205 22nd Ave N, Nashville, TN 37203",
+            "phone": ["3476138691"],
+            "delivery": "Per mile $1"
+        }
+    ],
+    "TX": [],
+    "UT": [],
+    "VT": [],
+    "VA": [],
+    "WA": [
+        {
+            "name": "Tacoma Oshxona",
+            "rating": "⭐️⭐️⭐️⭐️",
+            "address": "Tacoma, WA",
+            "phone": ["3609306392", "2534485190"],
+            "delivery": "Yes, free"
+        }
+    ],
+    "WV": [],
+    "WI": [],
+    "WY": []
+}
