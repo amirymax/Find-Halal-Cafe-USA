@@ -1,84 +1,144 @@
 {
-    "AL": [],
-    "AK": [],
-    "AZ": [],
-    "AR": [],
-    "CA": [],
-    "CO": [],
-    "CT": [],
-    "DE": [],
-    "FL": [],
-    "GA": [],
-    "HI": [],
-    "ID": [],
-    "IL": [],
-    "IN": [],
-    "IA": [],
-    "KS": [],
-    "KY": [],
-    "LA": [],
-    "ME": [],
-    "MD": [],
-    "MA": [],
-    "MI": [],
-    "MN": [],
-    "MS": [],
-    "MO": [],
-    "MT": [],
-    "NE": [],
-    "NV": [],
-    "NH": [],
-    "NJ": [],
-    "NM": [],
-    "NY": [],
-    "NC": [],
-    "ND": [],
-    "OH": [],
-    "OK": [],
-    "OR": [
-        {
-            "name": "FOOD TRUCK NAVAT PDX",
-            "rating": "⭐️⭐️⭐️⭐️",
-            "address": "3625 NE Martin Luther King Jr Blvd, Portland, OR 97212",
-            "phone": ["4254282011", "7253774764"],
-            "delivery": "Yes, call for order"
-        }
-    ],
-    "PA": [
-        {
-            "name": "ASR FOOD MARKET",
-            "rating": "⭐️⭐️⭐️⭐️",
-            "address": "14101 Bustleton Ave, Philadelphia, PA 19116",
-            "phone": ["2678385999"],
-            "delivery": "Yes"
-        }
-    ],
-    "RI": [],
-    "SC": [],
-    "SD": [],
-    "TN": [
-        {
-            "name": "Uzbegim Halal Restaurant",
-            "rating": "⭐️⭐️⭐️⭐️",
-            "address": "205 22nd Ave N, Nashville, TN 37203",
-            "phone": ["3476138691"],
-            "delivery": "Per mile $1"
-        }
-    ],
-    "TX": [],
-    "UT": [],
-    "VT": [],
-    "VA": [],
-    "WA": [
-        {
-            "name": "Tacoma Oshxona",
-            "rating": "⭐️⭐️⭐️⭐️",
-            "address": "Tacoma, WA",
-            "phone": ["3609306392", "2534485190"],
-            "delivery": "Yes, free"
-        }
-    ],
-    "WV": [],
-    "WI": [],
-    "WY": []
+  "AL": [],
+  "AK": [],
+  "AZ": [
+    {
+      "name": "HALOL O'ZBEK TAOMLARI",
+      "address": "PHOENIX, AZ",
+      "phone": "+1 (602) 820-1597",
+      "delivery": "No"
+    }
+  ],
+  "AR": [],
+  "CA": [],
+  "CO": [],
+  "CT": [],
+  "DE": [],
+  "FL": [],
+  "GA": [
+    {
+      "name": "UZBEK HALAL FOOD",
+      "address": "ATLANTA, GA",
+      "description": "OVQAT UY SHAROITIDA TAYYORLANADI. BUYURTMALAR 4-5 SOAT OLDIN OLINADI.",
+      "phone": "770-878-2168",
+      "delivery": "Yes"
+    },
+    {
+      "name": "OZVEK OVQATLARI",
+      "address": "2950 Atlanta Rd, Smyrna, GA 30080",
+      "description": "Bizda barcha ovqatlarga 4-5 soat oldin buyurtma olinadi.",
+      "phone": "678 551 9877",
+      "delivery": "No"
+    }
+  ],
+  "HI": [],
+  "ID": [],
+  "IL": [],
+  "IN": [],
+  "IA": [],
+  "KS": [],
+  "KY": [],
+  "LA": [],
+  "ME": [],
+  "MD": [],
+  "MA": [],
+  "MI": [],
+  "MN": [],
+  "MS": [],
+  "MO": [],
+  "MT": [],
+  "NE": [],
+  "NV": [
+    {
+      "name": "CALI KEBAB",
+      "address": "3812 E Craig Rd, North Las Vegas, NV 89031",
+      "phone": "(747) 202-7777",
+      "delivery": "No"
+    }
+  ],
+  "NH": [],
+  "NJ": [
+    {
+      "name": "HALAL FOOD NEW JERSEY",
+      "address": "New Jersey Edison 08817, NJ Trucks stops Petro Love's",
+      "phone": "732 433 8462, 646 836 1716",
+      "delivery": "Yes"
+    }
+  ],
+  "NM": [],
+  "NY": [],
+  "NC": [],
+  "ND": [],
+  "OH": [
+    {
+      "name": "CARAVAN HOUSE",
+      "address": "2541 ROMING RD, AKRON, OH 44320 (На против AMAZON AKRON,OH AKC 1)",
+      "phone": "(440) 575 5555",
+      "delivery": "Yes"
+    }
+  ],
+  "OK": [],
+  "OR": [
+    {
+      "name": "FOOD TRUCK NAVAT PDX",
+      "address": "3625 NE Martin Luther King Jr Blvd, Portland, OR 97212",
+      "phone": "4254282011, 7253774764",
+      "delivery": "Yes, call for order"
+    }
+  ],
+  "PA": [
+    {
+      "name": "ASR FOOD MARKET",
+      "address": "14101 Bustleton Ave, Philadelphia, PA 19116",
+      "phone": "2678385999",
+      "delivery": "Yes"
+    }
+  ],
+  "RI": [],
+  "SC": [],
+  "SD": [],
+  "TN": [
+    {
+      "name": "Uzbegim Halal Restaurant",
+      "address": "205 22nd Ave N, Nashville, TN 37203",
+      "phone": "3476138691",
+      "delivery": "per mile 1$"
+    },
+    {
+      "name": "MILLIY TAOMLAR",
+      "address": "2123 Belcourt Ave, Nashville, TN 37212",
+      "phone": "6159911191",
+      "delivery": "Yes"
+    },
+    {
+      "name": "Halal food",
+      "address": "428 Keegan Dr, Pigeon Forge, TN 37863",
+      "description": "ZAKAZ ASOSIDA: 4 -5 SOAT OLDIN OLINADI",
+      "phone": "8654100845",
+      "delivery": "No"
+    }
+  ],
+  "TX": [],
+  "UT": [
+    {
+      "name": "AINURA",
+      "address": "Salt Lake City, UT",
+      "description": "Заказы принимаются за 10 часов.",
+      "phone": "+1801-600-3892 Ainura",
+      "delivery": "Yes (FREE)"
+    }
+  ],
+  "VT": [],
+  "VA": [],
+  "WA": [
+    {
+      "name": "Tacoma oshxona",
+      "address": "Tacoma, WA",
+      "phone": "3609306392, 2534485190",
+      "delivery": "Yes (free)"
+    }
+  ],
+  "WV": [],
+  "WI": [],
+  "WY": []
 }

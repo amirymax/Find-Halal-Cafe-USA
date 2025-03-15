@@ -62,9 +62,9 @@ async def process_state(message: types.Message):
     else:
         response = f"📍 <b>Рестораны в штате {state}:</b>\n\n"
         for i, restaurant in enumerate(restaurants, start=1):
-            phones = "\n📞 ".join(restaurant["phone"])
+            phones = "\n📞 "+restaurant["phone"]
             response += (
-                f"🍽 <b>{restaurant['name']}</b> ({restaurant['rating']})\n"
+                f"🍽 <b>{restaurant['name']}</b>\n"
                 f"📍 <b>Адрес:</b> {restaurant['address']}\n"
                 f"📞 <b>Телефон:</b> {phones}\n"
                 f"🚙 <b>Доставка:</b> {restaurant['delivery']}\n"
