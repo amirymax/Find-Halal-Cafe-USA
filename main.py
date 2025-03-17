@@ -1,24 +1,30 @@
 import json
 import logging
 import asyncio
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher, types, Router
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.client.default import DefaultBotProperties
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
-
 # Включаем логирование
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO, 
+    filename="bot.log",  
+    filemode="a",  # a - append
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-# Укажите ваш токен
+
 BOT_TOKEN = "7805627856:AAEl3LjfN_Yuc-XAaCVH_rZvt_KzGiHJPgY"
-
+ADMIN_IDS = []
 bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
+router = Router()
 
 # Загружаем JSON с ресторанами
 with open("restaurants.json", "r", encoding="utf-8") as file:
     restaurants_data = json.load(file)
+
 
 # 📍 Приветственное сообщение
 WELCOME_MESSAGE = (
@@ -31,19 +37,18 @@ WELCOME_MESSAGE = (
     "🍽 Приятного аппетита!\n"
 )
 
-# Функция для создания клавиатуры с выбором штатов (по 3 в ряд)
 def create_states_keyboard():
     buttons = [KeyboardButton(text=state) for state in restaurants_data.keys()]
     keyboard = ReplyKeyboardMarkup(keyboard=[buttons[i:i+3] for i in range(0, len(buttons), 3)], resize_keyboard=True)
     return keyboard
 
-# 📍 Команда /start
-@dp.message(CommandStart())
+
+@router.message(CommandStart())
 async def start_handler(message: types.Message):
     await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
 
-# 📍 Обработка выбора штата
-@dp.message()
+# check if the user id is not in ADMIN IDS
+@router.message(lambda message: message.from_user.id not in ADMIN_IDS)
 async def process_state(message: types.Message):
     state = message.text.strip()
     
@@ -72,9 +77,12 @@ async def process_state(message: types.Message):
             )
         await message.answer(response, reply_markup=create_states_keyboard())
 
+dp.include_router(router)
 # Запуск бота
 async def main():
     await dp.start_polling(bot)
+    # output after bot started
 
 if __name__ == "__main__":
+    print("Bot started")
     asyncio.run(main())
