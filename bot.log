@@ -31,3 +31,438 @@
 2025-03-17 21:49:55,771 - INFO - Start polling
 2025-03-17 21:49:55,923 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
 2025-03-17 21:49:59,811 - INFO - Update id=48807721 is handled. Duration 328 ms by bot id=7805627856
+2025-03-17 21:52:41,048 - INFO - Update id=48807722 is handled. Duration 125 ms by bot id=7805627856
+2025-03-17 22:00:48,047 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:00:48,047 - INFO - Polling stopped
+2025-03-17 22:01:38,261 - INFO - Start polling
+2025-03-17 22:01:38,411 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:03:14,983 - INFO - Update id=48807723 is handled. Duration 188 ms by bot id=7805627856
+2025-03-17 22:03:16,423 - INFO - Update id=48807724 is handled. Duration 77 ms by bot id=7805627856
+2025-03-17 22:03:29,374 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:03:29,374 - INFO - Polling stopped
+2025-03-17 22:03:35,065 - INFO - Start polling
+2025-03-17 22:03:35,215 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:03:36,173 - INFO - Update id=48807725 is handled. Duration 186 ms by bot id=7805627856
+2025-03-17 22:03:38,088 - INFO - Update id=48807726 is handled. Duration 109 ms by bot id=7805627856
+2025-03-17 22:04:05,992 - INFO - Update id=48807727 is handled. Duration 63 ms by bot id=7805627856
+2025-03-17 22:25:38,807 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:25:38,807 - INFO - Polling stopped
+2025-03-17 22:45:44,718 - INFO - Start polling
+2025-03-17 22:45:45,861 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:45:52,294 - INFO - Update id=48807728 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:45:52,294 - ERROR - Cause exception while process update id=48807728 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 16, in new_cafe
+    await bot.send_messasge("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:45:58,364 - INFO - Update id=48807729 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:06,068 - INFO - Update id=48807730 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:11,942 - INFO - Update id=48807731 is handled. Duration 188 ms by bot id=7805627856
+2025-03-17 22:46:16,407 - INFO - Update id=48807732 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:35,642 - INFO - Update id=48807733 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:35,642 - ERROR - Cause exception while process update id=48807733 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 16, in new_cafe
+    await bot.send_messasge("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:46:39,489 - INFO - Update id=48807734 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:39,489 - ERROR - Cause exception while process update id=48807734 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 16, in new_cafe
+    await bot.send_messasge("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:46:42,360 - INFO - Update id=48807735 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:46:42,360 - ERROR - Cause exception while process update id=48807735 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 16, in new_cafe
+    await bot.send_messasge("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:48:46,025 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:48:46,025 - INFO - Polling stopped
+2025-03-17 22:48:51,152 - INFO - Start polling
+2025-03-17 22:48:51,302 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:48:57,409 - INFO - Update id=48807736 is handled. Duration 172 ms by bot id=7805627856
+2025-03-17 22:49:02,135 - INFO - Update id=48807737 is not handled. Duration 15 ms by bot id=7805627856
+2025-03-17 22:54:38,711 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:54:38,711 - INFO - Polling stopped
+2025-03-17 22:54:43,691 - INFO - Start polling
+2025-03-17 22:54:43,831 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:54:52,697 - INFO - Update id=48807738 is handled. Duration 203 ms by bot id=7805627856
+2025-03-17 22:54:54,377 - INFO - Update id=48807739 is handled. Duration 78 ms by bot id=7805627856
+2025-03-17 22:55:17,072 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:55:17,072 - INFO - Polling stopped
+2025-03-17 22:55:21,426 - INFO - Start polling
+2025-03-17 22:55:21,562 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:55:24,392 - INFO - Update id=48807740 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:55:24,392 - ERROR - Cause exception while process update id=48807740 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 17, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:55:27,773 - INFO - Update id=48807741 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:55:27,773 - ERROR - Cause exception while process update id=48807741 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 17, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:55:28,379 - INFO - Update id=48807742 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:55:28,379 - ERROR - Cause exception while process update id=48807742 by bot id=7805627856
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 17, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+NameError: name 'bot' is not defined
+2025-03-17 22:56:01,709 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:56:01,709 - INFO - Polling stopped
+2025-03-17 22:56:06,324 - INFO - Start polling
+2025-03-17 22:56:06,465 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:56:08,065 - INFO - Update id=48807743 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:56:08,074 - ERROR - Cause exception while process update id=48807743 by bot id=7805627856
+TypeError: send_message() missing 1 required positional argument: 'text'
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 19, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+TypeError: send_message() missing 1 required positional argument: 'text'
+2025-03-17 22:56:09,943 - INFO - Update id=48807744 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-17 22:56:09,943 - ERROR - Cause exception while process update id=48807744 by bot id=7805627856
+TypeError: send_message() missing 1 required positional argument: 'text'
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 19, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+TypeError: send_message() missing 1 required positional argument: 'text'
+2025-03-17 22:56:11,437 - INFO - Update id=48807745 is handled. Duration 172 ms by bot id=7805627856
+2025-03-17 22:56:12,965 - INFO - Update id=48807746 is not handled. Duration 15 ms by bot id=7805627856
+2025-03-17 22:56:12,965 - ERROR - Cause exception while process update id=48807746 by bot id=7805627856
+TypeError: send_message() missing 1 required positional argument: 'text'
+Traceback (most recent call last):
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 19, in new_cafe
+    await bot.send_message("Hi, its ADmin Panel")
+TypeError: send_message() missing 1 required positional argument: 'text'
+2025-03-17 22:56:36,074 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-17 22:56:36,074 - INFO - Polling stopped

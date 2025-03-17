@@ -6,12 +6,57 @@
       "name": "HALOL O'ZBEK TAOMLARI",
       "address": "PHOENIX, AZ",
       "phone": "+1 (602) 820-1597",
-      "delivery": "No"
+      "delivery": "No",
+      "description": ""
     }
   ],
   "AR": [],
-  "CA": [],
-  "CO": [],
+  "CA": [
+    {
+      "name": "HALAL FOOD",
+      "address": "Sacramento, CA California",
+      "phone": "9165333778",
+      "delivery": "No",
+      "description": "Zakaz asosida tayyorlanadi"
+    },
+    {
+      "name": "UZBEK MILLY TAOMLARI",
+      "address": "Sacramento, California, CA",
+      "phone": "2797909083",
+      "delivery": "No",
+      "description": "Uy sharoitida - Damashniy"
+    },
+    {
+      "name": "HALAL FOOD",
+      "address": "Sacramento, CA",
+      "phone": "+1 (916) 750-6977",
+      "delivery": "No",
+      "description": ""
+    },
+    {
+      "name": "Samarkand Grill",
+      "address": "1033 N. Waterman ave unit J, San Bernardino, CA 92410",
+      "phone": "949-910-5696",
+      "delivery": "No",
+      "description": ""
+    }
+  ],
+  "CO": [
+    {
+      "name": "COLORADO HALAL FOOD",
+      "address": "16751 East 32nd Ave, Aurora, Co, 80011",
+      "phone": "+1(970)306-2452, +1(970)306-9552",
+      "delivery": "Yes",
+      "description": "Buyurtmalar 4-5 soat oldin qabul qilinadi"
+    },
+    {
+      "name": "Tandoori Deli Halal",
+      "address": "4034 S Parker Rd, Aurora, CO 80014",
+      "phone": "+1 (303) 558-0290",
+      "delivery": "No",
+      "description": ""
+    }
+  ],
   "CT": [],
   "DE": [],
   "FL": [],
@@ -53,7 +98,8 @@
       "name": "CALI KEBAB",
       "address": "3812 E Craig Rd, North Las Vegas, NV 89031",
       "phone": "(747) 202-7777",
-      "delivery": "No"
+      "delivery": "No",
+      "description": ""
     }
   ],
   "NH": [],
@@ -62,7 +108,8 @@
       "name": "HALAL FOOD NEW JERSEY",
       "address": "New Jersey Edison 08817, NJ Trucks stops Petro Love's",
       "phone": "732 433 8462, 646 836 1716",
-      "delivery": "Yes"
+      "delivery": "Yes",
+      "description": ""
     }
   ],
   "NM": [],
@@ -74,7 +121,8 @@
       "name": "CARAVAN HOUSE",
       "address": "2541 ROMING RD, AKRON, OH 44320 (На против AMAZON AKRON,OH AKC 1)",
       "phone": "(440) 575 5555",
-      "delivery": "Yes"
+      "delivery": "Yes",
+      "description": ""
     }
   ],
   "OK": [],
@@ -83,7 +131,8 @@
       "name": "FOOD TRUCK NAVAT PDX",
       "address": "3625 NE Martin Luther King Jr Blvd, Portland, OR 97212",
       "phone": "4254282011, 7253774764",
-      "delivery": "Yes, call for order"
+      "delivery": "Yes, call for order",
+      "description": ""
     }
   ],
   "PA": [
@@ -91,7 +140,15 @@
       "name": "ASR FOOD MARKET",
       "address": "14101 Bustleton Ave, Philadelphia, PA 19116",
       "phone": "2678385999",
-      "delivery": "Yes"
+      "delivery": "Yes",
+      "description": ""
+    },
+    {
+      "name": "CAFE SAMARKAND",
+      "address": "3103 Banksville Rd, Pittsburgh, PA 15216",
+      "phone": "4125833078",
+      "delivery": "No",
+      "description": ""
     }
   ],
   "RI": [],
@@ -102,13 +159,15 @@
       "name": "Uzbegim Halal Restaurant",
       "address": "205 22nd Ave N, Nashville, TN 37203",
       "phone": "3476138691",
-      "delivery": "per mile 1$"
+      "delivery": "per mile 1$",
+      "description": ""
     },
     {
       "name": "MILLIY TAOMLAR",
       "address": "2123 Belcourt Ave, Nashville, TN 37212",
       "phone": "6159911191",
-      "delivery": "Yes"
+      "delivery": "Yes",
+      "description": ""
     },
     {
       "name": "Halal food",
@@ -135,10 +194,12 @@
       "name": "Tacoma oshxona",
       "address": "Tacoma, WA",
       "phone": "3609306392, 2534485190",
-      "delivery": "Yes (free)"
+      "delivery": "Yes (free)",
+      "description": ""
     }
   ],
   "WV": [],
   "WI": [],
   "WY": []
 }
+

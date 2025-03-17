@@ -6,6 +6,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.client.default import DefaultBotProperties
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from admin import admin_router, ADMIN_IDS
 # Включаем логирование
 logging.basicConfig(
     level=logging.INFO, 
@@ -16,7 +17,7 @@ logging.basicConfig(
 
 
 BOT_TOKEN = "7805627856:AAEl3LjfN_Yuc-XAaCVH_rZvt_KzGiHJPgY"
-ADMIN_IDS = []
+
 bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
 router = Router()
@@ -67,21 +68,30 @@ async def process_state(message: types.Message):
     else:
         response = f"📍 <b>Рестораны в штате {state}:</b>\n\n"
         for i, restaurant in enumerate(restaurants, start=1):
-            phones = "\n📞 "+restaurant["phone"]
+            # check if devlivery is No, just dont add id
+            delivery = ""
+            description = ""
+            if restaurant["delivery"] != "No":
+                delivery = f"🚙 <b>Доставка:</b> {restaurant['delivery']}"
+
+            if restaurant["description"]:
+                description = f"📝 <b>{restaurant['description']}</b>"
+
             response += (
                 f"🍽 <b>{restaurant['name']}</b>\n"
                 f"📍 <b>Адрес:</b> {restaurant['address']}\n"
-                f"📞 <b>Телефон:</b> {phones}\n"
-                f"🚙 <b>Доставка:</b> {restaurant['delivery']}\n"
+                f"📞 <b>Телефон:</b> {restaurant['phone']}\n"
+                f"{delivery}\n"
+                f"{description}\n"
                 "➖➖➖➖➖➖➖➖➖➖\n"
             )
         await message.answer(response, reply_markup=create_states_keyboard())
-
+        
 dp.include_router(router)
+dp.include_router(admin_router)
 # Запуск бота
 async def main():
     await dp.start_polling(bot)
-    # output after bot started
 
 if __name__ == "__main__":
     print("Bot started")
