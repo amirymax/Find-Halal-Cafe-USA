@@ -466,3 +466,425 @@ Traceback (most recent call last):
 TypeError: send_message() missing 1 required positional argument: 'text'
 2025-03-17 22:56:36,074 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
 2025-03-17 22:56:36,074 - INFO - Polling stopped
+2025-03-19 07:56:48,781 - INFO - Start polling
+2025-03-19 07:56:48,939 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 07:57:03,445 - INFO - Update id=48807752 is handled. Duration 280 ms by bot id=7805627856
+2025-03-19 07:57:09,095 - INFO - Update id=48807753 is not handled. Duration 0 ms by bot id=7805627856
+2025-03-19 07:57:59,653 - INFO - Polling stopped
+2025-03-19 07:57:59,653 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 07:58:07,651 - INFO - Start polling
+2025-03-19 07:58:07,798 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 07:58:08,051 - INFO - Update id=48807754 is handled. Duration 172 ms by bot id=7805627856
+2025-03-19 07:58:09,568 - INFO - Update id=48807755 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 07:58:18,937 - INFO - Update id=48807756 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 07:58:28,819 - INFO - Update id=48807757 is handled. Duration 171 ms by bot id=7805627856
+2025-03-19 07:58:34,087 - INFO - Update id=48807758 is handled. Duration 77 ms by bot id=7805627856
+2025-03-19 07:58:43,770 - INFO - Update id=48807759 is handled. Duration 125 ms by bot id=7805627856
+2025-03-19 07:59:00,338 - INFO - Update id=48807760 is not handled. Duration 125 ms by bot id=7805627856
+2025-03-19 07:59:00,338 - ERROR - Cause exception while process update id=48807760 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 07:59:06,175 - INFO - Update id=48807761 is handled. Duration 109 ms by bot id=7805627856
+2025-03-19 07:59:07,398 - INFO - Update id=48807762 is not handled. Duration 109 ms by bot id=7805627856
+2025-03-19 07:59:07,398 - ERROR - Cause exception while process update id=48807762 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 07:59:54,493 - INFO - Polling stopped
+2025-03-19 07:59:54,493 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:00:02,385 - INFO - Start polling
+2025-03-19 08:00:02,530 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:00:04,849 - INFO - Update id=48807763 is handled. Duration 250 ms by bot id=7805627856
+2025-03-19 08:00:06,113 - INFO - Update id=48807764 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:00:12,989 - INFO - Update id=48807765 is handled. Duration 110 ms by bot id=7805627856
+2025-03-19 08:00:51,425 - INFO - Update id=48807766 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:01:18,645 - INFO - Polling stopped
+2025-03-19 08:01:18,645 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:01:24,966 - INFO - Start polling
+2025-03-19 08:01:25,122 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:01:28,641 - INFO - Update id=48807767 is handled. Duration 266 ms by bot id=7805627856
+2025-03-19 08:01:30,482 - INFO - Update id=48807768 is handled. Duration 110 ms by bot id=7805627856
+2025-03-19 08:01:31,721 - INFO - Update id=48807769 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:01:33,965 - INFO - Update id=48807770 is handled. Duration 186 ms by bot id=7805627856
+2025-03-19 08:01:38,485 - INFO - Update id=48807771 is handled. Duration 172 ms by bot id=7805627856
+2025-03-19 08:01:43,990 - INFO - Update id=48807772 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:04:23,680 - INFO - Polling stopped
+2025-03-19 08:04:23,683 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:04:29,230 - INFO - Start polling
+2025-03-19 08:04:29,380 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:04:30,343 - INFO - Update id=48807773 is handled. Duration 171 ms by bot id=7805627856
+2025-03-19 08:04:31,431 - INFO - Update id=48807774 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:04:32,435 - INFO - Update id=48807775 is handled. Duration 77 ms by bot id=7805627856
+2025-03-19 08:04:34,921 - INFO - Update id=48807776 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:04:58,391 - INFO - Polling stopped
+2025-03-19 08:04:58,391 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:05:04,691 - INFO - Start polling
+2025-03-19 08:05:04,850 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:05:06,993 - INFO - Update id=48807777 is handled. Duration 186 ms by bot id=7805627856
+2025-03-19 08:05:10,533 - INFO - Update id=48807778 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:05:12,148 - INFO - Update id=48807779 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:05:12,853 - INFO - Update id=48807780 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:05:13,349 - INFO - Update id=48807781 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:05:20,259 - INFO - Update id=48807782 is handled. Duration 1813 ms by bot id=7805627856
+2025-03-19 08:05:23,390 - INFO - Update id=48807783 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:05:27,203 - INFO - Update id=48807784 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:05:40,992 - INFO - Update id=48807785 is handled. Duration 77 ms by bot id=7805627856
+2025-03-19 08:05:46,874 - INFO - Update id=48807786 is handled. Duration 77 ms by bot id=7805627856
+2025-03-19 08:05:49,525 - INFO - Update id=48807787 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:06:03,520 - INFO - Update id=48807788 is not handled. Duration 109 ms by bot id=7805627856
+2025-03-19 08:06:03,520 - ERROR - Cause exception while process update id=48807788 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:06:14,796 - INFO - Update id=48807789 is handled. Duration 109 ms by bot id=7805627856
+2025-03-19 08:06:22,724 - INFO - Update id=48807790 is not handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:06:22,724 - ERROR - Cause exception while process update id=48807790 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:07:37,119 - INFO - Polling stopped
+2025-03-19 08:07:37,121 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:07:57,355 - INFO - Start polling
+2025-03-19 08:07:57,533 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:08:01,920 - INFO - Update id=48807791 is handled. Duration 186 ms by bot id=7805627856
+2025-03-19 08:08:03,350 - INFO - Update id=48807792 is handled. Duration 171 ms by bot id=7805627856
+2025-03-19 08:08:05,406 - INFO - Update id=48807793 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:08:05,997 - INFO - Update id=48807794 is handled. Duration 108 ms by bot id=7805627856
+2025-03-19 08:08:09,579 - INFO - Update id=48807795 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:08:12,351 - INFO - Update id=48807796 is handled. Duration 125 ms by bot id=7805627856
+2025-03-19 08:08:17,260 - INFO - Update id=48807797 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:08:27,050 - INFO - Update id=48807798 is handled. Duration 109 ms by bot id=7805627856
+2025-03-19 08:08:30,231 - INFO - Update id=48807799 is handled. Duration 219 ms by bot id=7805627856
+2025-03-19 08:08:38,146 - INFO - Update id=48807800 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:08:44,790 - INFO - Update id=48807801 is not handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:08:44,790 - ERROR - Cause exception while process update id=48807801 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:08:48,202 - INFO - Update id=48807802 is handled. Duration 92 ms by bot id=7805627856
+2025-03-19 08:08:57,400 - INFO - Update id=48807803 is not handled. Duration 203 ms by bot id=7805627856
+2025-03-19 08:08:57,400 - ERROR - Cause exception while process update id=48807803 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:10:10,989 - INFO - Polling stopped
+2025-03-19 08:10:10,989 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:10:18,129 - INFO - Start polling
+2025-03-19 08:10:18,276 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:10:21,930 - INFO - Update id=48807804 is handled. Duration 188 ms by bot id=7805627856
+2025-03-19 08:10:23,640 - INFO - Update id=48807805 is handled. Duration 125 ms by bot id=7805627856
+2025-03-19 08:10:24,449 - INFO - Update id=48807806 is handled. Duration 155 ms by bot id=7805627856
+2025-03-19 08:10:24,854 - INFO - Update id=48807807 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:10:27,297 - INFO - Update id=48807808 is handled. Duration 109 ms by bot id=7805627856
+2025-03-19 08:10:28,617 - INFO - Update id=48807809 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:10:31,035 - INFO - Update id=48807810 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:10:35,819 - INFO - Update id=48807811 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:10:38,171 - INFO - Update id=48807812 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:10:40,619 - INFO - Update id=48807813 is handled. Duration 92 ms by bot id=7805627856
+2025-03-19 08:10:44,151 - INFO - Update id=48807814 is not handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:10:44,151 - ERROR - Cause exception while process update id=48807814 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:10:47,001 - INFO - Update id=48807815 is handled. Duration 108 ms by bot id=7805627856
+2025-03-19 08:10:49,427 - INFO - Update id=48807816 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:10:53,673 - INFO - Update id=48807817 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:10:54,298 - INFO - Update id=48807818 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:14:55,288 - INFO - Polling stopped
+2025-03-19 08:14:55,288 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:15:09,357 - INFO - Start polling
+2025-03-19 08:15:09,521 - INFO - Run polling for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:15:12,383 - INFO - Update id=48807819 is handled. Duration 264 ms by bot id=7805627856
+2025-03-19 08:15:15,262 - INFO - Update id=48807820 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:15:16,676 - INFO - Update id=48807821 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:15:17,461 - INFO - Update id=48807822 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:15:23,449 - INFO - Update id=48807823 is handled. Duration 171 ms by bot id=7805627856
+2025-03-19 08:15:26,432 - INFO - Update id=48807824 is handled. Duration 77 ms by bot id=7805627856
+2025-03-19 08:15:31,889 - INFO - Update id=48807825 is handled. Duration 188 ms by bot id=7805627856
+2025-03-19 08:15:37,716 - INFO - Update id=48807826 is handled. Duration 61 ms by bot id=7805627856
+2025-03-19 08:15:40,238 - INFO - Update id=48807827 is handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:15:42,587 - INFO - Update id=48807828 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:15:45,566 - INFO - Update id=48807829 is not handled. Duration 63 ms by bot id=7805627856
+2025-03-19 08:15:45,566 - ERROR - Cause exception while process update id=48807829 by bot id=7805627856
+AttributeError: 'str' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\Users\Amiri\Desktop\Find-Halal-Cafe-USA\admin.py", line 97, in process_description
+    await state.finish()
+AttributeError: 'str' object has no attribute 'finish'
+2025-03-19 08:15:50,644 - INFO - Update id=48807830 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:15:55,088 - INFO - Update id=48807831 is handled. Duration 94 ms by bot id=7805627856
+2025-03-19 08:16:00,722 - INFO - Update id=48807832 is handled. Duration 140 ms by bot id=7805627856
+2025-03-19 08:16:01,393 - INFO - Update id=48807833 is handled. Duration 78 ms by bot id=7805627856
+2025-03-19 08:16:22,381 - INFO - Polling stopped for bot @halal_cafe_usa_bot id=7805627856 - 'UZBEK USA HALAL FOOD \U0001f372'
+2025-03-19 08:16:22,383 - INFO - Polling stopped

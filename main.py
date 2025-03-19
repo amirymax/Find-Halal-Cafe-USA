@@ -2,8 +2,9 @@ import json
 import logging
 import asyncio
 from aiogram import Bot, Dispatcher, types, Router
+from aiogram.fsm.context import FSMContext
 from aiogram.enums import ParseMode
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, StateFilter
 from aiogram.client.default import DefaultBotProperties
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from admin import admin_router, ADMIN_IDS
@@ -23,9 +24,13 @@ dp = Dispatcher()
 router = Router()
 
 # Загружаем JSON с ресторанами
-with open("restaurants.json", "r", encoding="utf-8") as file:
-    restaurants_data = json.load(file)
-
+def load_restaurants():
+    global restaurants_data
+    try:
+        with open("restaurants.json", "r", encoding="utf-8") as file:
+            restaurants_data = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        restaurants_data = {}
 
 # 📍 Приветственное сообщение
 WELCOME_MESSAGE = (
@@ -45,11 +50,12 @@ def create_states_keyboard():
 
 
 @router.message(CommandStart())
-async def start_handler(message: types.Message):
+async def start_handler(message: types.Message, state: FSMContext):
+    await state.clear()
+    load_restaurants()
     await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
 
-# check if the user id is not in ADMIN IDS
-@router.message(lambda message: message.from_user.id not in ADMIN_IDS)
+@router.message(StateFilter(None), lambda message: message.text != '/newcafe')
 async def process_state(message: types.Message):
     state = message.text.strip()
     
