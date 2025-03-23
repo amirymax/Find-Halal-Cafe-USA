@@ -6,7 +6,9 @@ from aiogram.fsm.context import FSMContext
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart, StateFilter
 from aiogram.client.default import DefaultBotProperties
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.exceptions import TelegramBadRequest
+
 from admin import admin_router, ADMIN_IDS
 # Включаем логирование
 logging.basicConfig(
@@ -33,27 +35,66 @@ def load_restaurants():
         restaurants_data = {}
 
 # 📍 Приветственное сообщение
-WELCOME_MESSAGE = (
-    "👋 <b>Добро пожаловать!</b>\n\n"
-    "Этот бот поможет вам найти <b>халяльные рестораны</b> в США! 🇺🇸\n\n"
-    "📌 <b>Как пользоваться:</b>\n"
-    "1️⃣ Выберите нужный штат.\n"
-    "2️⃣ Получите список доступных ресторанов с адресами и телефонами.\n"
-    "3️⃣ Узнайте, есть ли доставка.\n\n"
-    "🍽 Приятного аппетита!\n"
-)
+WELCOME_MESSAGE = '''
+👋 <b>Welcome!</b>  
+
+🍽 <i>Find the best fast food & restaurants near you!</i>  
+
+🌍 <b>Languages:</b>  
+🇺🇿 <b>Sizga yaqin joylashgan</b> – Tezkor oziq-ovqat va restoran qidiruvi.  
+🇺🇸 <b>Fast food & restaurant search</b> – Find the best places nearby.  
+🇷🇺 <b>Быстрый поиск еды</b> – Рестораны и кафе рядом с вами.  
+
+🍕 Bon Appétit! 🚀
+'''
 
 def create_states_keyboard():
     buttons = [KeyboardButton(text=state) for state in restaurants_data.keys()]
     keyboard = ReplyKeyboardMarkup(keyboard=[buttons[i:i+3] for i in range(0, len(buttons), 3)], resize_keyboard=True)
     return keyboard
 
+CHANNEL_ID = -1002529182280
+CHANNEL_LINK = "https://t.me/+FMifo106Wh43YmJh"
 
+def create_subscription_keyboard():
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="📢 Подписаться на канал", url=CHANNEL_LINK)],  # Первая строка
+        [InlineKeyboardButton(text="✅ Я подписался", callback_data="check_subscription")]  # Вторая строка
+    ])
+    return keyboard
+# 🔹 Функция проверки подписки
+async def check_subscription(user_id: int, bot: Bot) -> bool:
+    try:
+        member = await bot.get_chat_member(chat_id=CHANNEL_ID, user_id=user_id)
+        return member.status in ["member", "administrator", "creator"]
+    except TelegramBadRequest as e:
+        logging.error(f"❌ Ошибка при проверке подписки {user_id}: {e}")
+        return False
+
+# 🔹 Обработчик команды /start
 @router.message(CommandStart())
-async def start_handler(message: types.Message, state: FSMContext):
+async def start_handler(message: types.Message, state: FSMContext, bot: Bot):
     await state.clear()
+
+    if not await check_subscription(message.from_user.id, bot):
+        await message.answer(
+            "🔹 Для использования бота подпишитесь на канал и нажмите «Я подписался» после этого:",
+            reply_markup=create_subscription_keyboard()
+        )
+        return
+    
     load_restaurants()
     await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
+
+# 🔹 Обработчик кнопки "Я подписался"
+@router.callback_query(lambda c: c.data == "check_subscription")
+async def check_subscription_callback(callback: types.CallbackQuery, bot: Bot):
+    if await check_subscription(callback.from_user.id, bot):
+        await callback.message.edit_text("✅ Вы подписаны! Теперь можно пользоваться ботом.")
+        load_restaurants()
+        await callback.message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
+    else:
+        await callback.answer("❌ Вы еще не подписались! Проверьте и попробуйте снова.", show_alert=True)
 
 @router.message(StateFilter(None), lambda message: message.text != '/newcafe')
 async def process_state(message: types.Message):
@@ -85,8 +126,8 @@ async def process_state(message: types.Message):
 
             response += (
                 f"🍽 <b>{restaurant['name']}</b>\n"
-                f"📍 <b>Адрес:</b> {restaurant['address']}\n"
-                f"📞 <b>Телефон:</b> {restaurant['phone']}\n"
+                f"📞 <b>Phone:</b> {restaurant['phone']}\n"
+                f"📍 <b>Location:</b> {restaurant['address']}\n"
                 f"{delivery}\n"
                 f"{description}\n"
                 "➖➖➖➖➖➖➖➖➖➖\n"
