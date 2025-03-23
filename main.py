@@ -53,12 +53,12 @@ def create_states_keyboard():
     keyboard = ReplyKeyboardMarkup(keyboard=[buttons[i:i+3] for i in range(0, len(buttons), 3)], resize_keyboard=True)
     return keyboard
 
-CHANNEL_ID = -1002529182280
-CHANNEL_LINK = "https://t.me/+FMifo106Wh43YmJh"
+CHANNEL_ID = -1002616983549
+CHANNEL_LINK = "https://t.me/halal_cafe_usa"
 
 def create_subscription_keyboard():
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📢 Подписаться на канал", url=CHANNEL_LINK)],  # Первая строка
+        [InlineKeyboardButton(text="📢 Присоединиться к группе", url=CHANNEL_LINK)],  # Первая строка
         [InlineKeyboardButton(text="✅ Я подписался", callback_data="check_subscription")]  # Вторая строка
     ])
     return keyboard
@@ -75,10 +75,10 @@ async def check_subscription(user_id: int, bot: Bot) -> bool:
 @router.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext, bot: Bot):
     await state.clear()
-
-    if not await check_subscription(message.from_user.id, bot):
+    print(message.chat.id)
+    if not await check_subscription(message.from_user.id, bot) and message.chat.id != CHANNEL_ID:
         await message.answer(
-            "🔹 Для использования бота подпишитесь на канал и нажмите «Я подписался» после этого:",
+            "🔹 Для использования бота присоединяйтесь в группу и нажмите «Я подписался» после этого:",
             reply_markup=create_subscription_keyboard()
         )
         return
