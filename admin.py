@@ -1,12 +1,7 @@
 import json
-import logging
-import asyncio
-from aiogram import Bot, Dispatcher, types, Router, F
+from aiogram import types, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
-from aiogram.enums import ParseMode
-from aiogram.filters import CommandStart
-from aiogram.client.default import DefaultBotProperties
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 from aiogram.filters import Command
 

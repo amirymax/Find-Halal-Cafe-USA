@@ -4,7 +4,7 @@ import asyncio
 from aiogram import Bot, Dispatcher, types, Router
 from aiogram.fsm.context import FSMContext
 from aiogram.enums import ParseMode
-from aiogram.filters import CommandStart, StateFilter
+from aiogram.filters import CommandStart, StateFilter, Command
 from aiogram.client.default import DefaultBotProperties
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.exceptions import TelegramBadRequest
@@ -75,16 +75,60 @@ async def check_subscription(user_id: int, bot: Bot) -> bool:
 @router.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext, bot: Bot):
     await state.clear()
-    print(message.chat.id)
-    if not await check_subscription(message.from_user.id, bot) and message.chat.id != CHANNEL_ID:
-        await message.answer(
-            "🔹 Для использования бота присоединяйтесь в группу и нажмите «Я подписался» после этого:",
-            reply_markup=create_subscription_keyboard()
-        )
-        return
-    
+    if message.chat.id != CHANNEL_ID:
+
+        if not await check_subscription(message.from_user.id, bot):
+            await message.answer(
+                "🔹 Для использования бота присоединяйтесь в группу и нажмите «Я подписался» после этого:",
+                reply_markup=create_subscription_keyboard()
+            )
+            return
+        
+
+        load_restaurants()  
+        await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
+    else:
+        await message.reply("Для использования бота, напиши в таком формате:\n\n/state 'Название штата (две буквы WA)'\n\nПример:\n\n/state WA")
+
+@router.message(Command('state'))
+async def start_handler(message: types.Message):
+    state = message.text.split()[1].upper()
     load_restaurants()
-    await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
+    if state not in restaurants_data:
+        await message.answer("❌ <b>Такого штата нет в списке!</b>\n🔍 Попробуйте выбрать из кнопок ниже.")
+        return
+
+    restaurants = restaurants_data.get(state, [])
+
+    if not restaurants:
+        await message.answer(
+            f"❌ <b>В этом штате пока нет зарегистрированных ресторанов.</b>\n"
+            "🔍 Попробуйте выбрать другой штат!",
+            reply_markup=create_states_keyboard()
+        )
+    else:
+        response = f"📍 <b>Рестораны в штате {state}:</b>\n\n"
+        for i, restaurant in enumerate(restaurants, start=1):
+            # check if devlivery is No, just dont add id
+            delivery = ""
+            description = ""
+            if restaurant["delivery"] != "No":
+                delivery = f"🚙 <b>Доставка:</b> {restaurant['delivery']}"
+
+            if restaurant["description"]:
+                description = f"📝 <b>{restaurant['description']}</b>"
+
+            response += (
+                f"🍽 <b>{restaurant['name']}</b>\n"
+                f"📞 <b>Phone:</b> {restaurant['phone']}\n"
+                f"📍 <b>Location:</b> {restaurant['address']}\n"
+                f"{delivery}\n"
+                f"{description}\n"
+                "➖➖➖➖➖➖➖➖➖➖\n"
+            )
+        await message.answer(response)
+
+
 
 # 🔹 Обработчик кнопки "Я подписался"
 @router.callback_query(lambda c: c.data == "check_subscription")
@@ -96,9 +140,9 @@ async def check_subscription_callback(callback: types.CallbackQuery, bot: Bot):
     else:
         await callback.answer("❌ Вы еще не подписались! Проверьте и попробуйте снова.", show_alert=True)
 
-@router.message(StateFilter(None), lambda message: message.text != '/newcafe')
+@router.message(StateFilter(None), lambda message: message.text != '/newcafe' and message.chat.id != CHANNEL_ID)
 async def process_state(message: types.Message):
-    state = message.text.strip()
+    state = message.text.strip().upper()
     
     if state not in restaurants_data:
         await message.answer("❌ <b>Такого штата нет в списке!</b>\n🔍 Попробуйте выбрать из кнопок ниже.", reply_markup=create_states_keyboard())

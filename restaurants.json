@@ -1,73 +1,458 @@
 {
-    "AL": [
-    ],
+    "AL": [],
     "AK": [],
     "AZ": [
+        {
+            "name": "OZBEK MILLIY TAOMLARI",
+            "address": "12740 West Indian school road Litchfield Park 85340",
+            "phone": "602-348-99-38",
+            "delivery": "YES",
+            "description": "UY\nSHAROITIDA HALOL\nMAHSULOTLARDAN TAYYORLANADI"
+        },
+        {
+            "name": "ARIZONA PHOENIX",
+            "address": "12740 WEST INDIAN SCHOOL ROAD LITCHFIELD PARK\n85340",
+            "phone": "602-348-99-38",
+            "delivery": "YES",
+            "description": "Halol mahsulotlar va pokiza sharoitlarda uzbek va evropa taomlari uy sharoitida tayyorlanadi"
+        },
+        {
+            "name": "HALOL O'ZBEK TAOMLARI",
+            "address": "PHOENIX ARIZONA",
+            "phone": "+1 (602) 820 - 1597",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        },
+        {
+            "name": "Glendale, AZ 85301",
+            "address": "Glendale, AZ 85301",
+            "phone": "+14807891711",
+            "delivery": "YES",
+            "description": "Ощутите уют домашней кухни и наслаждайтесь традиционными вкусами, созданными специально для вас!"
+        }
     ],
-    "AR": [],
+    "AR": [
+        {
+            "name": "UZBEK HALAL FOODS",
+            "address": "1019 N Main St\nPalestine AR 72372",
+            "phone": "5126693163",
+            "delivery": "YES",
+            "description": "🕚 08:00AM-23:00PM\n\ni 40 exit 233"
+        },
+        {
+            "name": "Uzbek Halal Fodds",
+            "address": "3955 Southland DI,\nWest Memphis,AR 72301",
+            "phone": "5126693163",
+            "delivery": "Call for Delivery 🚚",
+            "description": "🕙 9:00AM-11:00PM"
+        }
+    ],
     "CA": [
-        
+        {
+            "name": "CALI KEBAB",
+            "address": "• Fontana\n\n• Ontario\n\n• Rialto\n\n• Perris\n\n• Riverside\n\n• San Bernardino\n\n• Chino\n\n• Hesperia\n\n• Mira Loma\n\n• Los Angeles",
+            "phone": "(747) 202-7777",
+            "delivery": "YES",
+            "description": "🕚 24/7"
+        },
+        {
+            "name": "Sacramento CA California",
+            "address": "Sacramento CA California",
+            "phone": "9165333778",
+            "delivery": "YES",
+            "description": "ZAKAZ ASOSIDA TAYYORLANADI 4\n- 5 SOAT OLDIN"
+        },
+        {
+            "name": "Sacramento California CA",
+            "address": "Sacramento California CA",
+            "phone": "2797909083",
+            "delivery": "YES",
+            "description": "UY SHAROITI TAYYORLANADI 1 kun oldin"
+        },
+        {
+            "name": "Sacramento, CA!",
+            "address": "Sacramento, CA!",
+            "phone": "+1 (916) 750-6977",
+            "delivery": "YES",
+            "description": "Представляем Вам наше ежедневное MENU приготовленное\nстрого по Halal стандартам"
+        },
+        {
+            "name": "Samarkand Grill o'zbek",
+            "address": "1033 N. Waterman ave unit J,\nSan Bernardino CA 92410",
+            "phone": "949-910-5696",
+            "delivery": "YES",
+            "description": "🕙 24/7"
+        },
+        {
+            "name": "UZBEK MILLIY TAOMLARI",
+            "address": "Riverside, CA\nOntario, CA\nFontana , CA\nChino, CA\nSan Bernardinio ,CA",
+            "phone": "+1 (714) 766-4343",
+            "delivery": "YES",
+            "description": "Узбекские национальные блюда -"
+        },
+        {
+            "name": "Sofiya",
+            "address": "1098 Sutter st, San Francisco,\nCA 94109.",
+            "phone": "7868768686",
+            "delivery": "YES",
+            "description": "Tojik va Özbek milliy taomlari restorani."
+        }
     ],
     "CO": [
+        {
+            "name": "Colorado Halal Food",
+            "address": "16751 East 32nd\n\nAve, Aurora, Co, 80011",
+            "phone": "+1(970)306-2452.  +1(970)306-9552",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        }
     ],
     "CT": [],
     "DE": [],
-    "FL": [],
+    "FL": [
+        {
+            "name": "CARAVAN UZBEK & TURKISH CUISINE",
+            "address": "8015 S Orange Ave, Orlando, FL 32809",
+            "phone": "+1 (321) 294-4444",
+            "delivery": "Call for delivery 🚚",
+            "description": "🥘 🍲"
+        }
+    ],
     "GA": [
-    
+        {
+            "name": "ATLANTA UZBEK HALAL FOOD",
+            "address": "Atlanta GA",
+            "phone": "770-878-2168",
+            "delivery": "YES",
+            "description": "OVQAT UY SHAROITIDA TAYYORLANADI.\nBUYURTMALAR 4-5 SOAT OLDIN\nOLINADI"
+        },
+        {
+            "name": "O'zbek ovqatlari",
+            "address": "2950 Atlanta Rd,\nSmyrna, GA 30080",
+            "phone": "6785519877",
+            "delivery": "YES",
+            "description": "Bizda barcha ovqatlarga 4-5 soat\noldin buyutma olinadi."
+        }
     ],
     "HI": [],
     "ID": [],
-    "IL": [],
+    "IL": [
+        {
+            "name": "CHICAGO halal food",
+            "address": "Aurora IL бепул етказиб бериш\nхизмати бор",
+            "phone": "(630) 270-5603",
+            "delivery": "YES",
+            "description": "Овкатларимиз уй шароитида\nхалол сифатли таёрланади\nБуюртмалар камида 4 - 5 соат\nолдин кабул килинади"
+        },
+        {
+            "name": "CARAVAN RESTAURANT",
+            "address": "510 S Bolingbrook Dr\nBolingbrook, IL 60440",
+            "phone": "7733673258",
+            "delivery": "YES",
+            "description": "🕚 10:00AM-10:00PM"
+        },
+        {
+            "name": "Halal Food uzbek Kirgiz",
+            "address": "CHICAGO IL ILLIONOIS",
+            "phone": "2247600211",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        },
+        {
+            "name": "Halal Food 🥘",
+            "address": "i 88-i 90-i80-i 355-i 55-i 57-i 94-i 294",
+            "phone": "+15517869980",
+            "delivery": "YES:i 88-i 90-i80-i 355-i 55-i 57-i 94-i 294йулларига етказиб бериш\nхизмати мавжуд 24/7",
+            "description": "🥘 🍲"
+        }
+    ],
     "IN": [],
-    "IA": [],
-    "KS": [],
+    "IA": [
+        {
+            "name": "UZBEK HALOL TAOMLARI",
+            "address": "IOWA\nDavenport IA",
+            "phone": "5633062295",
+            "delivery": "YES",
+            "description": "TAOM UY SHAROITIDA\nTAYYORLANADI\n1 soat oldindan byurutma bering"
+        }
+    ],
+    "KS": [
+        {
+            "name": "Uzbegimning Halol",
+            "address": "Kansas City",
+            "phone": "(989) 954 - 4770.  (407) 670 - 4252",
+            "delivery": "YES",
+            "description": "Truck stop i-635 i-35 Amazon warehouse"
+        }
+    ],
     "KY": [],
     "LA": [],
     "ME": [],
     "MD": [],
     "MA": [],
-    "MI": [],
-    "MN": [],
-    "MS": [],
-    "MO": [],
+    "MI": [
+        {
+            "name": "halol uzbek milliy taom.",
+            "address": "DETROIT MICHIGAN MI",
+            "phone": "8573575757",
+            "delivery": "YES",
+            "description": "Tayyor ovqatlar ham bor\n\nQazi bor ot goshtidan"
+        }
+    ],
+    "MN": [
+        {
+            "name": "Samarkand Restaurant",
+            "address": "16 Nathan Ln N, Plymouth, MN 55441",
+            "phone": "+1 (763) 545-9842",
+            "delivery": "Call for delivery 🚚",
+            "description": "🥘 🍲"
+        }
+    ],
+    "MS": [
+        {
+            "name": "OCEAN SPRINGS MS MISSISSIPPI",
+            "address": "13921 big ridge rd Biloxi ms 39532",
+            "phone": "2282432635 call or text",
+            "delivery": "YES",
+            "description": "ZAKAZ ASOSIDA TAYYORLANADI"
+        }
+    ],
+    "MO": [
+        {
+            "name": "ST LOUIS MO MISSOURI\nOFALLON MO",
+            "address": "ST LOUIS MO MISSOURI\nOFALLON MO",
+            "phone": "3145854605",
+            "delivery": "YES",
+            "description": "ZAKAZ ASOSIDA TAYYORLANADI\n3 - 4 SOAT OLDIN ZAKAZ OLINADI."
+        }
+    ],
     "MT": [],
     "NE": [],
     "NV": [
-
+        {
+            "name": "CALI KEBAB",
+            "address": "3812 E Craig Rd,\nNorth Las Vegas, NV 89031",
+            "phone": "(747) 202-7777",
+            "delivery": "YES",
+            "description": "Хакикий кумирда кабоб ва\nтулик узбек таомлари!"
+        }
     ],
     "NH": [],
     "NJ": [
-
+        {
+            "name": "Halal food",
+            "address": "New Jersey Edison 08817",
+            "phone": "732 433 8462.   646 836 1716",
+            "delivery": "YES —Trucks stops Petro Love's",
+            "description": "Hohlagan uzbek milliy taomlariga zakaz olamiz\noldindan zakaz olamiza"
+        }
     ],
     "NM": [],
     "NY": [],
-    "NC": [],
+    "NC": [
+        {
+            "name": "N.N.D FOOD",
+            "address": "11907 Royal Castle CT 28277\nCharlotte North Carolina",
+            "phone": "+1 (980)\n315-3037",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        },
+        {
+            "name": "Mazali",
+            "address": "2200 Thrift Rd, Charlotte, NC 28208",
+            "phone": "3477856222. 3476666930",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        },
+        {
+            "name": "Halal Eats Charlotte, NC",
+            "address": "500 W Summit Ave, Charlotte,NC 28203",
+            "phone": "9804745995",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        }
+    ],
     "ND": [],
     "OH": [
-
+        {
+            "name": "CHAYKHANA N1",
+            "address": "9536 Cincinnati Columbus Rd, Ste\n15\nWest Chester, OH 45241",
+            "phone": "(513) 755-0596",
+            "delivery": "YES",
+            "description": "."
+        },
+        {
+            "name": "MILLIY HALOL TAOMLAR",
+            "address": "Columbus OHIO",
+            "phone": "6144067394",
+            "delivery": "YES",
+            "description": "OVQAT UY SHAROIT DA QILINADI.\nZAKAZ USTIDA TAYYORYANALDI"
+        },
+        {
+            "name": "CARAVAN HOUSE",
+            "address": "2541 ROMING RD AKRON\nОН 44320",
+            "phone": "(440) 575 5555",
+            "delivery": "YES",
+            "description": "Amazon AKC 1\n🕚 10:00AM-11:00PM"
+        },
+        {
+            "name": "Uzbekistan Restaurant & Cafe",
+            "address": "Cincinnati\n\n11154 Kenwood Rd, Blue Ash, OH 45242",
+            "phone": "+1 (513) 386-8886",
+            "delivery": "Call fo Delivery 🚚",
+            "description": "🥘 🍲"
+        }
     ],
     "OK": [],
     "OR": [
-  
+        {
+            "name": "PORTLAND OREGON\nFOOD TRUCK\nNAVAT PDX",
+            "address": "3625 NE Martin Luther King Jr Blvd,\nPortland, OR 97212",
+            "phone": "4254282011.    7253774764",
+            "delivery": "YES",
+            "description": "🕚 11:00AM-10:00PM"
+        }
     ],
     "PA": [
-       
+        {
+            "name": "ASR FOOD MARKET",
+            "address": "14101 Bustleton Ave, Philadelphia, PA 19116",
+            "phone": "2678385999",
+            "delivery": "YES",
+            "description": "40 miles delivery 🚚"
+        },
+        {
+            "name": "Riviera Pizzada",
+            "address": "1926 Spring Garden Ave, Pittsburgh PA 15212",
+            "phone": "412-918-1536",
+            "delivery": "YES",
+            "description": "Toshkent toy oshi"
+        },
+        {
+            "name": "CAFE SAMARKAND",
+            "address": "3103 Banksville Rd, Pittsburgh, PA\n15216",
+            "phone": "4125833078",
+            "delivery": "YES",
+            "description": "🥘 🍲"
+        },
+        {
+            "name": "PITTSBURGH VODIY TAOMLARI",
+            "address": "669 Elm Spring Ct, Pittsburgh, PA 15220",
+            "phone": "+14126893807",
+            "delivery": "YES",
+            "description": "🕙 11:00AM-12:00PM"
+        }
     ],
     "RI": [],
     "SC": [],
     "SD": [],
     "TN": [
-        
+        {
+            "name": "Uzbegim Halal Restaurant",
+            "address": "205 22nd Ave north\nNashville TN",
+            "phone": "3476138691",
+            "delivery": "YES",
+            "description": "🕚 11:00AM-11:00PM"
+        },
+        {
+            "name": "Brooklyn Pizza & Cafe",
+            "address": "2428 Nolensville pike Nashville TN\n37211",
+            "phone": "6159552222\n\n6159257070",
+            "delivery": "YES 24/7",
+            "description": "124\n165\n140\nInterstate yonalishlarida"
+        },
+        {
+            "name": "OSH RESTAURANT & GRILL",
+            "address": "216 Thompson Ln,\nNashville, TN 37211",
+            "phone": "(615)-710-2288.  (615)-968-4444.  (615)-712-9985",
+            "delivery": "YES",
+            "description": "🕚 9:00AM-1:00AM\n\nInterstate :  i 24-i 40-i 65"
+        },
+        {
+            "name": "Uzbek milliy va boshqa taomlar",
+            "address": "229 Donelson Pike, Nashville, TN\n37214",
+            "phone": "+1(215) 929 6717",
+            "delivery": "YES",
+            "description": "Interstate: i 40-i 65-i 24"
+        },
+        {
+            "name": "Slice of Italy",
+            "address": "2123 Belcourt Ave\nNashville TN 37212",
+            "phone": "6159911191",
+            "delivery": "YES",
+            "description": "Parking VIP. Nashville Downtown yonida joylashgan.\nBobtail parking imkoniyati ham bor.\nDelivery gilib berish imkoniyati bor.\nDowntown atrofiga."
+        },
+        {
+            "name": "KNOXVILLE TN",
+            "address": "428 KeegonDR Pigeon Porge KNOXVILLE TN",
+            "phone": "8654100845",
+            "delivery": "YES",
+            "description": "ZAKAZ ASOSIDA: 4 -5 SOAT\nOLDIN OLINADI."
+        },
+        {
+            "name": "MEMPHIS TN oshxonasi",
+            "address": "GERMANTOWN TN\nMEMPHIS TN.",
+            "phone": "9013159888",
+            "delivery": "YES",
+            "description": "OVQAT 1 - KUN OLDIN ZAKAZ ASOSIDA QILINADI"
+        }
     ],
-    "TX": [],
+    "TX": [
+        {
+            "name": "MILLIY TAOMLARI",
+            "address": "Houston TEXAS !!!",
+            "phone": "+13462740363",
+            "delivery": "YES -Truckstop Flying J TA Loves",
+            "description": "4-5 soat oldin tel qilib zakaz berib qo'ysangiz zo'r bo'lar edi."
+        },
+        {
+            "name": "Bobo Kamol Halal Uzbek/Tajik Food",
+            "address": "8210 S Lancaster Rd, Dallas, TX 75241",
+            "phone": "+1 (415) 218-8572",
+            "delivery": "Call for delivery 🚚",
+            "description": "🥘 food 🍲"
+        },
+        {
+            "name": "Rokhat Grill",
+            "address": "Dallas\n2205 N Central Expy #180, Plano, TX 75075",
+            "phone": "+1 (469) 298-2091",
+            "delivery": "Call for Delivery 🚚",
+            "description": "🥘 🍲"
+        }
+    ],
     "UT": [
-
+        {
+            "name": "Ainura",
+            "address": "Salt\nLake City, Utah",
+            "phone": "+1801-600-3892",
+            "delivery": "YES",
+            "description": "принимаются за 10 часов.\nДоставка до трак стопа бесплатная."
+        }
     ],
     "VT": [],
     "VA": [],
     "WA": [
- 
+        {
+            "name": "TACOMA OSHXONASI\nWASHINGTON\nTACOMA WA",
+            "address": "WASHINGTON\nTACOMA WA",
+            "phone": "3609306392.   2534485190",
+            "delivery": "YES (BEPUL SHTAT\nWASHINGTON ICHIDA)",
+            "description": "OVQAT 2 SOAT OLDIN ZAKAZ ASOSIDA QILINADI"
+        },
+        {
+            "name": "Seattle Tacoma WA",
+            "address": "Seattle Tacoma WA",
+            "phone": "8782294148",
+            "delivery": "YES",
+            "description": "СВЕЖИЕ, ВКУСНЫЕ ЕДЫ.\nПРИНИМАЕМ ЗАКАЗЫ"
+        },
+        {
+            "name": "Kent\nUzbek Cuisine",
+            "address": "26301 104th Ave SE\nKent, WA 98030",
+            "phone": "(206) 915 2588",
+            "delivery": "YES",
+            "description": "."
+        }
     ],
     "WV": [],
     "WI": [],
