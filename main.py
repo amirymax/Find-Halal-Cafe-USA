@@ -75,6 +75,7 @@ async def check_subscription(user_id: int, bot: Bot) -> bool:
 @router.message(CommandStart())
 async def start_handler(message: types.Message, state: FSMContext, bot: Bot):
     await state.clear()
+    load_restaurants()
     if message.chat.id != CHANNEL_ID:
 
         if not await check_subscription(message.from_user.id, bot):
@@ -85,17 +86,16 @@ async def start_handler(message: types.Message, state: FSMContext, bot: Bot):
             return
         
 
-        load_restaurants()  
+          
         await message.answer(WELCOME_MESSAGE, reply_markup=create_states_keyboard())
     else:
-        await message.reply("Для использования бота, напиши в таком формате:\n\n/state 'Название штата (две буквы WA)'\n\nПример:\n\n/state WA")
+        await message.reply("Для использования бота, напиши две буквы штата в таком формате:\nПример:\n\n WA", reply_markup=create_states_keyboard())
 
-@router.message(Command('state'))
-async def start_handler(message: types.Message):
-    state = message.text.split()[1].upper()
+@router.message(lambda message: message.chat.id == CHANNEL_ID and len(message.text) == 2 and message.text.isalpha())
+async def group_chat_handler(message: types.Message):
+    state = message.text.upper()
     load_restaurants()
     if state not in restaurants_data:
-        await message.answer("❌ <b>Такого штата нет в списке!</b>\n🔍 Попробуйте выбрать из кнопок ниже.")
         return
 
     restaurants = restaurants_data.get(state, [])
@@ -140,6 +140,7 @@ async def check_subscription_callback(callback: types.CallbackQuery, bot: Bot):
     else:
         await callback.answer("❌ Вы еще не подписались! Проверьте и попробуйте снова.", show_alert=True)
 
+# обрабатывает только сообщение в самом боте
 @router.message(StateFilter(None), lambda message: message.text != '/newcafe' and message.chat.id != CHANNEL_ID)
 async def process_state(message: types.Message):
     state = message.text.strip().upper()
